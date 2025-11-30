@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="CV Review - Get professional feedback on your resume." />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <title>CV Review - RealJobs</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div id="app">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="container nav-container">
+                <a href="index.html" class="logo-link">
+                    <img src="/logo.png" alt="RealJobs Logo" class="logo-img" />
+                    <span class="logo-text"><span style="color: var(--primary)">Real</span>Jobs</span>
+                </a>
+                <div class="nav-links desktop-only">
+                    <a href="index.html#jobs" class="nav-item">Find Jobs</a>
+                    <a href="index.html#companies" class="nav-item">Companies</a>
+                    <a href="cv-review.html" class="nav-item" style="color: var(--text-main);">CV Review</a>
+                </div>
+                <div class="nav-actions desktop-only">
+                    <button id="themeToggle" class="btn btn-ghost" aria-label="Toggle Theme">
+                        <!-- Sun Icon -->
+                        <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <line x1="12" y1="1" x2="12" y2="3"></line>
+                            <line x1="12" y1="21" x2="12" y2="23"></line>
+                            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                            <line x1="1" y1="12" x2="3" y2="12"></line>
+                            <line x1="21" y1="12" x2="23" y2="12"></line>
+                            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                        </svg>
+                        <!-- Moon Icon -->
+                        <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                        </svg>
+                    </button>
+                    <a href="signin.html" class="btn btn-ghost">Sign In</a>
+                    <a href="#" class="btn btn-primary">Post a Job</a>
+                </div>
+                <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="index.html#jobs" class="mobile-link">Find Jobs</a>
+                <a href="index.html#companies" class="mobile-link">Companies</a>
+                <a href="cv-review.html" class="mobile-link">CV Review</a>
+                <hr class="mobile-divider" />
+                <a href="signin.html" class="mobile-link">Sign In</a>
+                <a href="#" class="btn btn-primary full-width">Post a Job</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <header class="hero">
+            <div class="hero-bg-glow"></div>
+            <div class="container">
+                <div class="cv-hero">
+                    <h1 class="hero-title">
+                        Level up your <span class="text-gradient">career.</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Get AI-powered insights and professional feedback on your CV to stand out from the crowd.
+                    </p>
+                </div>
+
+                <div class="cv-upload-zone" id="dropZone">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="upload-icon" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                    </svg>
+                    <h3 class="upload-title">Drop your CV here</h3>
+                    <p class="upload-subtitle">Supports PDF, DOCX (Max 5MB)</p>
+                    <button class="btn btn-primary large">Select File</button>
+                    <input type="file" id="fileInput" hidden accept=".pdf,.doc,.docx">
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>
+                        <h3>Instant Analysis</h3>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem">Get feedback on keywords, formatting,
+                            and impact in seconds.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        <h3>ATS Friendly</h3>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem">Ensure your resume gets past Applicant
+                            Tracking Systems.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="feature-icon" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
+                        </svg>
+                        <h3>Expert Review</h3>
+                        <p style="color: var(--text-muted); margin-top: 0.5rem">Optional manual review by senior
+                            recruiters and hiring managers.</p>
+                    </div>
+                </div>
+
+            </div>
+        </header>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="/logo.png" alt="RealJobs" width="32" />
+                        <span><span style="color: var(--primary)">Real</span>Jobs</span>
+                    </div>
+                    <p>The job board for real opportunities.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>For Candidates</h4>
+                    <a href="index.html#jobs">Browse Jobs</a>
+                    <a href="index.html#companies">Browse Companies</a>
+                    <a href="index.html#salaries">Salary Calculator</a>
+                </div>
+                <div class="footer-col">
+                    <h4>For Employers</h4>
+                    <a href="#">Post a Job</a>
+                    <a href="#">Pricing</a>
+                    <a href="#">Hiring Guides</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+            <div class="container copy">
+                &copy; 2025 RealJobs Inc. All rights reserved.
+            </div>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>

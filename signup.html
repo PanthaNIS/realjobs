@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign Up for RealJobs - Start your journey to find the perfect job." />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <title>Sign Up - RealJobs</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="auth-page">
+        <div class="auth-container">
+
+            <div class="auth-card">
+                <a href="/" class="auth-logo-link">
+                    <img src="/logo.png" alt="RealJobs" class="auth-logo" />
+                </a>
+
+                <div class="auth-header">
+                    <h1 class="auth-title">Create Account</h1>
+                    <p class="auth-subtitle">Join thousands of professionals on RealJobs</p>
+                </div>
+
+                <form class="auth-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="fullname" class="form-label">Full Name</label>
+                        <input type="text" id="fullname" class="form-input" placeholder="John Doe" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="name@example.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="Min. 8 characters"
+                            required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm-password" class="form-label">Confirm Password</label>
+                        <input type="password" id="confirm-password" class="form-input"
+                            placeholder="Confirm your password" required />
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">Create Account</button>
+                </form>
+
+                <div class="auth-footer">
+                    Already have an account? <a href="signin.html" class="auth-link">Sign In</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

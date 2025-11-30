@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sign In to RealJobs - Access your professional dashboard." />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <title>Sign In - RealJobs</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="auth-page">
+        <div class="auth-container">
+
+            <div class="auth-card">
+                <a href="/" class="auth-logo-link">
+                    <img src="/logo.png" alt="RealJobs" class="auth-logo" />
+                </a>
+
+                <div class="auth-header">
+                    <h1 class="auth-title">Welcome Back</h1>
+                    <p class="auth-subtitle">Enter your credentials to access your account</p>
+                </div>
+
+                <form class="auth-form" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="name@example.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" id="password" class="form-input" placeholder="••••••••" required />
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" />
+                            <span>Remember me</span>
+                        </label>
+                        <a href="#" class="forgot-password">Forgot password?</a>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">Sign In</button>
+                </form>
+
+                <div class="auth-footer">
+                    Don't have an account? <a href="signup.html" class="auth-link">Sign Up</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
