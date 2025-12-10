@@ -29,302 +29,303 @@
           <a href="#companies" class="nav-item">Companies</a>
           <a href="cv-review.html" class="nav-item">CV Review</a>
         </div>
-        <button id="themeToggle" class="btn btn-ghost" aria-label="Toggle Theme">
-          <!-- Sun Icon -->
-          <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-            style="display: none;">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-          <!-- Moon Icon -->
-          <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
-            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
+        <div class="nav-actions desktop-only">
+          <button id="themeToggle" class="btn btn-ghost" aria-label="Toggle Theme">
+            <!-- Sun Icon (shown in dark mode to switch to light) -->
+            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <!-- Moon Icon (shown in light mode to switch to dark) -->
+            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+              fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              style="display: none;">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+            </svg>
+          </button>
+          <a href="signin.html" class="btn btn-ghost">Sign In</a>
+          <a href="#" class="btn btn-primary">Post a Job</a>
+        </div>
+        <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
         </button>
-        <a href="signin.html" class="btn btn-ghost">Sign In</a>
-        <a href="#" class="btn btn-primary">Post a Job</a>
       </div>
-      <button class="mobile-menu-btn" id="menuBtn" aria-label="Toggle Menu">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-  </div>
-  <!-- Mobile Menu -->
-  <div class="mobile-menu" id="mobileMenu">
-    <a href="#jobs" class="mobile-link">Find Jobs</a>
-    <a href="#companies" class="mobile-link">Companies</a>
-    <a href="cv-review.html" class="mobile-link">CV Review</a>
-    <hr class="mobile-divider" />
-    <a href="signin.html" class="mobile-link">Sign In</a>
-    <a href="#" class="btn btn-primary full-width">Post a Job</a>
-  </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-bg-glow"></div>
-    <div class="container hero-content">
-      <h1 class="hero-title">
-        Find the job <br />that defines <span class="text-gradient">you.</span>
-      </h1>
-      <p class="hero-subtitle">
-        Join thousands of professionals discovering verified roles at top tech companies. No ghosts, just real
-        opportunities.
-      </p>
-
-      <div class="search-bar">
-        <div class="input-group">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-            <circle cx="11" cy="11" r="8"></circle>
-            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-          </svg>
-          <input type="text" placeholder="Job title, keywords, or company" />
-        </div>
-        <div class="divider"></div>
-        <div class="input-group">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-            <circle cx="12" cy="10" r="3"></circle>
-          </svg>
-          <input type="text" placeholder="City, state, or remote" />
-        </div>
-        <button class="btn btn-primary search-btn">Search Jobs</button>
+      <!-- Mobile Menu -->
+      <div class="mobile-menu" id="mobileMenu">
+        <a href="#jobs" class="mobile-link">Find Jobs</a>
+        <a href="#companies" class="mobile-link">Companies</a>
+        <a href="cv-review.html" class="mobile-link">CV Review</a>
+        <hr class="mobile-divider" />
+        <a href="signin.html" class="mobile-link">Sign In</a>
+        <a href="#" class="btn btn-primary full-width">Post a Job</a>
       </div>
+    </nav>
 
-      <div class="hero-stats">
-        <div class="stat-item">
-          <span class="stat-num">10k+</span>
-          <span class="stat-label">Active Jobs</span>
+    <!-- Hero Section -->
+    <header class="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-content">
+        <h1 class="hero-title">
+          Find the job <br />that defines <span class="text-gradient">you.</span>
+        </h1>
+        <p class="hero-subtitle">
+          Join thousands of professionals discovering verified roles at top tech companies. No ghosts, just real
+          opportunities.
+        </p>
+
+        <div class="search-bar">
+          <div class="input-group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="text" placeholder="Job title, keywords, or company" />
+          </div>
+          <div class="divider"></div>
+          <div class="input-group">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+            <input type="text" placeholder="City, state, or remote" />
+          </div>
+          <button class="btn btn-primary search-btn">Search Jobs</button>
         </div>
-        <div class="stat-item">
-          <span class="stat-num">500+</span>
-          <span class="stat-label">Verified Companies</span>
-        </div>
-        <div class="stat-item">
-          <span class="stat-num">24h</span>
-          <span class="stat-label">Avg. Response</span>
+
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">10k+</span>
+            <span class="stat-label">Active Jobs</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">500+</span>
+            <span class="stat-label">Verified Companies</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">24h</span>
+            <span class="stat-label">Avg. Response</span>
+          </div>
         </div>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <!-- Trusted By Section -->
-  <section class="trusted-by">
-    <div class="container">
-      <p class="trusted-label">TRUSTED BY INNOVATIVE TEAMS</p>
-      <div class="logos-grid">
-        <!-- Simple text placeholders for logos for now, or SVG icons -->
-        <div class="company-logo">Acme Corp</div>
-        <div class="company-logo">Nebula</div>
-        <div class="company-logo">Kyber Systems</div>
-        <div class="company-logo">Global Bank</div>
-        <div class="company-logo">Future AI</div>
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+      <div class="container">
+        <p class="trusted-label">TRUSTED BY INNOVATIVE TEAMS</p>
+        <div class="logos-grid">
+          <!-- Simple text placeholders for logos for now, or SVG icons -->
+          <div class="company-logo">Acme Corp</div>
+          <div class="company-logo">Nebula</div>
+          <div class="company-logo">Kyber Systems</div>
+          <div class="company-logo">Global Bank</div>
+          <div class="company-logo">Future AI</div>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Featured Jobs -->
-  <section class="featured-section" id="jobs">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Featured Opportunities</h2>
-        <a href="#" class="view-all-link">View all jobs &rarr;</a>
-      </div>
+    <!-- Featured Jobs -->
+    <section class="featured-section" id="jobs">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Opportunities</h2>
+          <a href="#" class="view-all-link">View all jobs &rarr;</a>
+        </div>
 
-      <div class="jobs-grid">
-        <!-- Job Card 1 -->
-        <article class="job-card">
-          <div class="job-card-header">
-            <div class="company-icon" style="background: var(--accent-1)">N</div>
-            <div class="job-info">
-              <h3 class="job-role">Senior Frontend Engineer</h3>
-              <p class="company-name">Nebula Streams</p>
+        <div class="jobs-grid">
+          <!-- Job Card 1 -->
+          <article class="job-card">
+            <div class="job-card-header">
+              <div class="company-icon" style="background: var(--accent-1)">N</div>
+              <div class="job-info">
+                <h3 class="job-role">Senior Frontend Engineer</h3>
+                <p class="company-name">Nebula Streams</p>
+              </div>
+              <button class="bookmark-btn" aria-label="Save job">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
             </div>
-            <button class="bookmark-btn" aria-label="Save job">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-              </svg>
-            </button>
-          </div>
-          <div class="job-tags">
-            <span class="tag">Remote</span>
-            <span class="tag">Full-time</span>
-            <span class="tag">$140k - $180k</span>
-          </div>
-          <p class="job-desc">We are looking for an experienced frontend engineer to build our next-gen streaming
-            dashboard using React and WebGL.</p>
-          <div class="job-footer">
-            <span class="posted-time">Posted 2h ago</span>
-            <button class="btn btn-outline small">Apply Now</button>
-          </div>
-        </article>
-
-        <!-- Job Card 2 -->
-        <article class="job-card">
-          <div class="job-card-header">
-            <div class="company-icon" style="background: var(--accent-2)">K</div>
-            <div class="job-info">
-              <h3 class="job-role">Product Designer</h3>
-              <p class="company-name">Kyber Systems</p>
+            <div class="job-tags">
+              <span class="tag">Remote</span>
+              <span class="tag">Full-time</span>
+              <span class="tag">$140k - $180k</span>
             </div>
-            <button class="bookmark-btn" aria-label="Save job">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-              </svg>
-            </button>
-          </div>
-          <div class="job-tags">
-            <span class="tag">New York</span>
-            <span class="tag">Hybrid</span>
-            <span class="tag">$120k - $150k</span>
-          </div>
-          <p class="job-desc">Join our design team to craft intuitive enterprise interfaces. Experience with Figma and
-            design systems required.</p>
-          <div class="job-footer">
-            <span class="posted-time">Posted 5h ago</span>
-            <button class="btn btn-outline small">Apply Now</button>
-          </div>
-        </article>
-
-        <!-- Job Card 3 -->
-        <article class="job-card">
-          <div class="job-card-header">
-            <div class="company-icon" style="background: var(--accent-3)">F</div>
-            <div class="job-info">
-              <h3 class="job-role">Backend Developer</h3>
-              <p class="company-name">Future AI</p>
+            <p class="job-desc">We are looking for an experienced frontend engineer to build our next-gen streaming
+              dashboard using React and WebGL.</p>
+            <div class="job-footer">
+              <span class="posted-time">Posted 2h ago</span>
+              <button class="btn btn-outline small">Apply Now</button>
             </div>
-            <button class="bookmark-btn" aria-label="Save job">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
-                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
-              </svg>
-            </button>
+          </article>
+
+          <!-- Job Card 2 -->
+          <article class="job-card">
+            <div class="job-card-header">
+              <div class="company-icon" style="background: var(--accent-2)">K</div>
+              <div class="job-info">
+                <h3 class="job-role">Product Designer</h3>
+                <p class="company-name">Kyber Systems</p>
+              </div>
+              <button class="bookmark-btn" aria-label="Save job">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="job-tags">
+              <span class="tag">New York</span>
+              <span class="tag">Hybrid</span>
+              <span class="tag">$120k - $150k</span>
+            </div>
+            <p class="job-desc">Join our design team to craft intuitive enterprise interfaces. Experience with Figma and
+              design systems required.</p>
+            <div class="job-footer">
+              <span class="posted-time">Posted 5h ago</span>
+              <button class="btn btn-outline small">Apply Now</button>
+            </div>
+          </article>
+
+          <!-- Job Card 3 -->
+          <article class="job-card">
+            <div class="job-card-header">
+              <div class="company-icon" style="background: var(--accent-3)">F</div>
+              <div class="job-info">
+                <h3 class="job-role">Backend Developer</h3>
+                <p class="company-name">Future AI</p>
+              </div>
+              <button class="bookmark-btn" aria-label="Save job">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="job-tags">
+              <span class="tag">Remote</span>
+              <span class="tag">Contract</span>
+              <span class="tag">Competitive</span>
+            </div>
+            <p class="job-desc">Help us scale our ML inference API. Go and Python experience preferred. High impact
+              role.</p>
+            <div class="job-footer">
+              <span class="posted-time">Posted 1d ago</span>
+              <button class="btn btn-outline small">Apply Now</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Global Companies Section -->
+    <section class="companies-section" id="companies">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Top Companies Hiring Now</h2>
+          <a href="#" class="view-all-link">View all companies &rarr;</a>
+        </div>
+
+        <div class="company-grid">
+          <!-- Company 1 -->
+          <div class="company-card-lg">
+            <div class="company-logo-lg" style="color: var(--accent-1); border-color: rgba(16, 185, 129, 0.2)">N</div>
+            <h3 class="company-name-lg">Nebula Streams</h3>
+            <p class="company-industry">Streaming Technology</p>
+            <p class="company-desc">Pioneering the next generation of ultra-low latency streaming protocols for the
+              metaverse.</p>
+            <button class="btn btn-outline small full-width">View 12 Openings</button>
           </div>
-          <div class="job-tags">
-            <span class="tag">Remote</span>
-            <span class="tag">Contract</span>
-            <span class="tag">Competitive</span>
+
+          <!-- Company 2 -->
+          <div class="company-card-lg">
+            <div class="company-logo-lg" style="color: var(--accent-2); border-color: rgba(139, 92, 246, 0.2)">K</div>
+            <h3 class="company-name-lg">Kyber Systems</h3>
+            <p class="company-industry">Enterprise Security</p>
+            <p class="company-desc">Building resilient security infrastructure for Fortune 500 companies worldwide.</p>
+            <button class="btn btn-outline small full-width">View 8 Openings</button>
           </div>
-          <p class="job-desc">Help us scale our ML inference API. Go and Python experience preferred. High impact
-            role.</p>
-          <div class="job-footer">
-            <span class="posted-time">Posted 1d ago</span>
-            <button class="btn btn-outline small">Apply Now</button>
+
+          <!-- Company 3 -->
+          <div class="company-card-lg">
+            <div class="company-logo-lg" style="color: var(--accent-3); border-color: rgba(245, 158, 11, 0.2)">F</div>
+            <h3 class="company-name-lg">Future AI</h3>
+            <p class="company-industry">Artificial Intelligence</p>
+            <p class="company-desc">Democratizing access to large language models through efficient inference APIs.</p>
+            <button class="btn btn-outline small full-width">View 24 Openings</button>
           </div>
-        </article>
-      </div>
-    </div>
-  </section>
 
-  <!-- Global Companies Section -->
-  <section class="companies-section" id="companies">
-    <div class="container">
-      <div class="section-header">
-        <h2 class="section-title">Top Companies Hiring Now</h2>
-        <a href="#" class="view-all-link">View all companies &rarr;</a>
-      </div>
-
-      <div class="company-grid">
-        <!-- Company 1 -->
-        <div class="company-card-lg">
-          <div class="company-logo-lg" style="color: var(--accent-1); border-color: rgba(16, 185, 129, 0.2)">N</div>
-          <h3 class="company-name-lg">Nebula Streams</h3>
-          <p class="company-industry">Streaming Technology</p>
-          <p class="company-desc">Pioneering the next generation of ultra-low latency streaming protocols for the
-            metaverse.</p>
-          <button class="btn btn-outline small full-width">View 12 Openings</button>
-        </div>
-
-        <!-- Company 2 -->
-        <div class="company-card-lg">
-          <div class="company-logo-lg" style="color: var(--accent-2); border-color: rgba(139, 92, 246, 0.2)">K</div>
-          <h3 class="company-name-lg">Kyber Systems</h3>
-          <p class="company-industry">Enterprise Security</p>
-          <p class="company-desc">Building resilient security infrastructure for Fortune 500 companies worldwide.</p>
-          <button class="btn btn-outline small full-width">View 8 Openings</button>
-        </div>
-
-        <!-- Company 3 -->
-        <div class="company-card-lg">
-          <div class="company-logo-lg" style="color: var(--accent-3); border-color: rgba(245, 158, 11, 0.2)">F</div>
-          <h3 class="company-name-lg">Future AI</h3>
-          <p class="company-industry">Artificial Intelligence</p>
-          <p class="company-desc">Democratizing access to large language models through efficient inference APIs.</p>
-          <button class="btn btn-outline small full-width">View 24 Openings</button>
-        </div>
-
-        <!-- Company 4 -->
-        <div class="company-card-lg">
-          <div class="company-logo-lg" style="color: var(--primary); border-color: rgba(59, 130, 246, 0.2)">A</div>
-          <h3 class="company-name-lg">Acme Corp</h3>
-          <p class="company-industry">Logistics</p>
-          <p class="company-desc">Global leader in shipping and logistics solutions for e-commerce giants.</p>
-          <button class="btn btn-outline small full-width">View 5 Openings</button>
+          <!-- Company 4 -->
+          <div class="company-card-lg">
+            <div class="company-logo-lg" style="color: var(--primary); border-color: rgba(59, 130, 246, 0.2)">A</div>
+            <h3 class="company-name-lg">Acme Corp</h3>
+            <p class="company-industry">Logistics</p>
+            <p class="company-desc">Global leader in shipping and logistics solutions for e-commerce giants.</p>
+            <button class="btn btn-outline small full-width">View 5 Openings</button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CTA Section -->
-  <section class="cta-section">
-    <div class="container cta-container">
-      <div class="cta-content">
-        <h2>Ready to hire your next star?</h2>
-        <p>Post a job in minutes and reach thousands of qualified candidates. No hidden fees.</p>
-        <button class="btn btn-primary large">Post a Job for Free</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div class="footer-col">
-        <div class="footer-logo">
-          <img src="/logo.png" alt="RealJobs" width="32" />
-          <span><span style="color: var(--primary)">Real</span>Jobs</span>
+    <!-- CTA Section -->
+    <section class="cta-section">
+      <div class="container cta-container">
+        <div class="cta-content">
+          <h2>Ready to hire your next star?</h2>
+          <p>Post a job in minutes and reach thousands of qualified candidates. No hidden fees.</p>
+          <button class="btn btn-primary large">Post a Job for Free</button>
         </div>
-        <p>The job board for real opportunities.</p>
       </div>
-      <div class="footer-col">
-        <h4>For Candidates</h4>
-        <a href="#">Browse Jobs</a>
-        <a href="#">Browse Companies</a>
-        <a href="#">Salary Calculator</a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="/logo.png" alt="RealJobs" width="32" />
+            <span><span style="color: var(--primary)">Real</span>Jobs</span>
+          </div>
+          <p>The job board for real opportunities.</p>
+        </div>
+        <div class="footer-col">
+          <h4>For Candidates</h4>
+          <a href="#">Browse Jobs</a>
+          <a href="#">Browse Companies</a>
+          <a href="#">Salary Calculator</a>
+        </div>
+        <div class="footer-col">
+          <h4>For Employers</h4>
+          <a href="#">Post a Job</a>
+          <a href="#">Pricing</a>
+          <a href="#">Hiring Guides</a>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <a href="#">Privacy</a>
+          <a href="#">Terms</a>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>For Employers</h4>
-        <a href="#">Post a Job</a>
-        <a href="#">Pricing</a>
-        <a href="#">Hiring Guides</a>
+      <div class="container copy">
+        &copy; 2025 RealJobs Inc. All rights reserved.
       </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <a href="#">Privacy</a>
-        <a href="#">Terms</a>
-      </div>
-    </div>
-    <div class="container copy">
-      &copy; 2025 RealJobs Inc. All rights reserved.
-    </div>
-  </footer>
-  </footer>
-  <script src="./main.js"></script>
+    </footer>
+    </footer>
+    <script src="./main.js"></script>
   </div>
 </body>
 
