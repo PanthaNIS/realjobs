@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Post a Job on RealJobs - Reach thousands of qualified candidates." />
+    <link rel="icon" type="image/png" href="/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <title>Post a Job - RealJobs</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body>
+    <div class="auth-page">
+        <div class="auth-container">
+
+            <div class="auth-card contact-card">
+                <a href="/" class="auth-logo-link">
+                    <img src="/logo.png" alt="RealJobs" class="auth-logo" />
+                </a>
+
+                <div class="auth-header">
+                    <h1 class="auth-title">Post a Job</h1>
+                    <p class="auth-subtitle">Reach thousands of qualified candidates. Fill out the form below and our
+                        team will get back to you within 24 hours.</p>
+                </div>
+
+                <form class="auth-form" action="#" method="POST" id="postJobForm">
+                    <div class="form-group">
+                        <label for="companyName" class="form-label">Company Name</label>
+                        <input type="text" id="companyName" class="form-input" placeholder="Your company name"
+                            required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contactName" class="form-label">Contact Person</label>
+                        <input type="text" id="contactName" class="form-input" placeholder="Your full name" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" class="form-input" placeholder="name@company.com" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number (Optional)</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="+1 (555) 123-4567" />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jobTitle" class="form-label">Job Title</label>
+                        <input type="text" id="jobTitle" class="form-input" placeholder="e.g. Senior Frontend Engineer"
+                            required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="jobType" class="form-label">Job Type</label>
+                        <select id="jobType" class="form-input" required>
+                            <option value="" disabled selected>Select job type</option>
+                            <option value="full-time">Full-time</option>
+                            <option value="part-time">Part-time</option>
+                            <option value="contract">Contract</option>
+                            <option value="internship">Internship</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location" class="form-label">Location</label>
+                        <input type="text" id="location" class="form-input" placeholder="e.g. Remote, New York, Hybrid"
+                            required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Additional Details</label>
+                        <textarea id="message" class="form-input form-textarea"
+                            placeholder="Tell us more about the role, salary range, requirements, etc."
+                            rows="4"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary full-width">Submit Job Request</button>
+                </form>
+
+                <div class="auth-footer">
+                    Have questions? <a href="mailto:jobs@realjobs.com" class="auth-link">Contact us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('postJobForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+            alert('Thank you! Your job posting request has been submitted. Our team will contact you within 24 hours.');
+            this.reset();
+        });
+    </script>
+</body>
+
+</html>

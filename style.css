@@ -903,6 +903,25 @@ img {
   margin: 0 auto 1.5rem;
 }
 
+/* Contact/Post Job Form */
+.contact-card {
+  max-width: 520px;
+}
+
+.auth-container:has(.contact-card) {
+  max-width: 520px;
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-input option {
+  background: var(--bg-card);
+  color: var(--text-main);
+}
+
 /* CV Review Page */
 .cv-hero {
   text-align: center;
